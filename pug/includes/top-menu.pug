@@ -1,0 +1,17 @@
+- var navlist = {home: "/#top", about: "/#about", services: "/#services", gallery: "/#gallery", contact: "/#contact"};
+
+div.top-menu-wrapper
+  div.container
+    div.row.justify-content-between.align-items-center.top-menu
+      div.col-7.col-md-3.top-menu-logo automotive
+      nav.col-md-9.d-none.d-md-block.top-menu-nav
+        ul.d-md-flex.justify-content-end.nav-list
+          each item, key in navlist
+            li.nav-item #[a(class="nav-link" href= item)= key]
+      button(class="col-3 d-md-none mr-1 hamburger hamburger--spin-r" type="button")
+        span.hamburger-box
+          span.hamburger-inner
+  nav.d-md-none.mobile-nav
+    ul.mobile-nav-list
+      each item, key in navlist
+        li.mobile-nav-item #[a(class="mobile-nav-link" href= item)= key]

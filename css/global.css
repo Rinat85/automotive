@@ -1,0 +1,108 @@
+/* FONTS */
+
+@font-face {
+  font-family: 'Quite Chocolatey';
+  src: local("Quite Chocolatey"),
+       local("QuiteChocolatey-Regular"),
+       url('./../fonts/Quite Chocolatey.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat Regular';
+  src: local("Montserrat Regular"),
+       local("Montserrat-Regular"),
+       url('./../fonts/Montserrat-Regular.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat Bold';
+  src: local("Montserrat Bold"),
+       local("Montserrat-Bold"),
+       url('./../fonts/Montserrat-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Couture Bold';
+  src: local("Couture Bold"),
+       local("couture-bold"),
+       url('./../fonts/couture-bold.otf') format('opentype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'PTSerif Regular';
+  src: local("PTSerif Regular"),
+       local("PTSerif-Regular"),
+       url('./../fonts/PTSerif-Regular.ttf') format('truetype');
+  font-weight: bold;
+}
+
+
+/* GLOBAL TAGS */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  outline: 0;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+}
+
+input {
+  border: 0;
+  outline: 0;
+}
+
+.page-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1012px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-family: 'Couture Bold';
+  font-size: calc( (100vw - 360px)/(1012 - 360) * (50 - 36) + 36px);
+  color: #130e27;
+  text-transform: uppercase;
+}

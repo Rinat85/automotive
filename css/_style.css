@@ -1,0 +1,15 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import 'global.css';
+
+/* includes */
+@import './includes/hamburger.css';
+@import './includes/top-menu.css';
+@import './includes/footer.css';
+
+/* sections */
+@import './sections/section-header.css';
+@import './sections/section-services.css';
+@import './sections/section-jumbotron.css';
+@import './sections/section-pricing.css';
+@import './sections/section-testimonials.css';
+

@@ -1,0 +1,32 @@
+.footer {
+    padding: 62px 0 52px 0;
+
+    background-color: #130e27;
+
+    .footer-text {
+        font-family: 'PTSerif Regular';
+        font-size: 20px;
+        color: #ffffff;
+        line-height: 1;
+
+        @media screen and (max-width: 480px) {
+            text-align: center;
+        }
+
+        span {
+            color: #c62314;
+        }
+    }
+
+    .footer-logo {
+        font-family: 'Quite Chocolatey';
+        font-size: 64px;
+        color: #c62314;
+        line-height: 1;
+
+        @media screen and (max-width: 480px) {
+            margin: 24px 0 0 0;
+            text-align: center;
+        }
+    }
+}

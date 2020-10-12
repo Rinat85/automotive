@@ -1,0 +1,21 @@
+header.section-header#top
+  include includes/top-menu.pug
+  div.container
+    div.row.header-content
+      div.col-sm-12.col-md-7.header-banner
+        h1.header-banner-title sell your#[br] #[span car now]
+        p.header-banner-text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+      div.col-sm-12.col-md-5.header-form-wrapper
+        h2.form-title request a quote
+        form.header-form
+          input(class="form-control" type="text" placeholder="Full Name")
+          input(class="form-control" type="email" placeholder="Email Adress")
+          input(class="form-control" type="tel" placeholder="Phone Number")
+          input(class="form-control" type="text" placeholder="Country")
+          div.form-group.form-check
+            input(class="form-check-input" type="checkbox" placeholder="Country")
+            label.form-check-label I accept the terms & conditions
+          button(class="form-btn" type="submit") send
+
+
+

@@ -1,0 +1,104 @@
+.top-menu-wrapper {
+    width: 100%;
+    padding: 36px 0 0;
+
+    .top-menu {
+        background-color: transparent;
+
+        .top-menu-logo {
+            font-family: 'Quite Chocolatey';
+            color: #ffffff;
+            font-size: 88px;
+            line-height: 1;
+
+            @media screen and (max-width: 480px) {
+                font-size: 48px;
+            }
+        }
+
+        .top-menu-nav {
+            font-family: 'Montserrat Regular';
+
+            .nav-list {
+                .nav-item {
+                    margin: 0 2px;
+
+                    .nav-link {
+                        display: inline-block;
+                        padding: 12px 15px;
+                        border-radius: 10px;
+
+                        background-color: transparent;
+
+                        color: #ffffff;
+                        font-size: 18px;
+                        text-transform: uppercase;
+                        font-weight: 600;
+
+                        transition: all 0.3s ease-in-out;
+
+                        &:hover {
+                            background-color: #130e27;
+                        }
+                    }
+
+                    .active {
+                        background-color: #130e27;
+                    }
+                }
+            }
+        }
+    }
+
+    .mobile-nav {
+        position: absolute;
+        width: 100%;
+        background-color: #ffffff;
+        color: #130e27;
+        top: 0;
+        right: -100%;
+        z-index: 4;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+
+        .mobile-nav-list {
+            padding: 100px 0 50px 0;
+
+            .mobile-nav-item {
+
+                .mobile-nav-link {
+                    display: inline-block;
+                    position: relative;
+                    padding: 0 0 10px 0;
+
+                    font-family: 'Montserrat Regular';
+                    font-size: 22px;
+                    line-height: 1.2;
+                    text-decoration: none;
+
+                    &:after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        width: 0;
+                        height: 2px;
+
+                        background-color: #130e27;
+                        
+                        transition: all 0.3s ease-in-out;
+                    }
+
+                    &:hover:after {
+                        width: 100%;
+                    }
+
+                    &:visited {
+                        color: #130e27;
+                    }
+                }
+
+                
+            }
+        }
+    }
+}
